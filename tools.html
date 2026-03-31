@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools - FitFinder</title>
+
+<meta name="description" content="FitFinder helps users find workouts, calculate calories and improve fitness.">
+<meta name="keywords" content="fitness, workouts, gym, calories, training">
+<meta name="author" content="Your Name">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1 class="logo">FitFinder</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="tools.html">Tools</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Fitness Tools</h2>
+  <p>Useful tools to track your progress</p>
+</section>
+
+<section class="features">
+
+  <!-- WATER -->
+  <div class="card">
+    <h3>Water Intake 💧</h3>
+
+    <input type="number" id="waterWeight" placeholder="Weight (kg)">
+    <button onclick="calculateWater()">Calculate</button>
+
+    <p id="waterResult"></p>
+  </div>
+
+  <!-- CALORIES -->
+  <div class="card">
+    <h3>Calorie Calculator 🔥</h3>
+
+    <input type="number" id="age" placeholder="Age">
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+
+    <select id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <button onclick="calculateCalories()">Calculate</button>
+
+    <p id="calorieResult"></p>
+  </div>
+  <div class="card">
+  <h3>Motivation 💬</h3>
+  <p id="quote">Click below for a fitness quote</p>
+  <button onclick="getQuote()">Get Quote</button>
+</div>
+
+</section>
+<footer>
+  <p>© 2026 FitFinder</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
